@@ -1,5 +1,3 @@
-
-
 let socket = io('http://localhost:3000/')
 
 function renderMessage(message){
@@ -9,9 +7,6 @@ function renderMessage(message){
     let divMessage = document.createElement('div')
     
     divMessage.classList.add('message-div')
-    
-    
-    
     divMessage.innerHTML = `<strong>${message.author}:</strong> ${message.message}`
     
     containerMessage.append(divMessage)
